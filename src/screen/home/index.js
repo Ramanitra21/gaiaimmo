@@ -26,7 +26,6 @@ const Home = () => {
        
       </Droite>
       <Gauche>
-          <Slider/>
       </Gauche>
     </HomeStyle>
   );
