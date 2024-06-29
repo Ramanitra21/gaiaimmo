@@ -25,8 +25,8 @@ const NavigationBar = ({ toggleTheme }) => {
       <NavBar>
         <Logo src={logoImage} alt="Logo" />
         <NavLinks>
-          <NavLink to="/home" activeClassName="active">Home</NavLink>
-          <NavLink to="/about" activeClassName="active">About</NavLink>
+          <NavLink to="/home" activeClassName="active">Accueil</NavLink>
+          <NavLink to="/about" activeClassName="active">Produit</NavLink>
           <NavLink to="/service" activeClassName="active">Service</NavLink>
           <NavLink to="/contact" activeClassName="active">Contact</NavLink>
         </NavLinks>

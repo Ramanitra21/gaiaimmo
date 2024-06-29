@@ -1,11 +1,11 @@
 // themes.js
 export const lightTheme = {
     background: '#ffffff',
-    text: '#000000',
+    text: '#2E2E2E;',
   };
   
   export const darkTheme = {
-    background: '#000000',
+    background: '#2E2E2E;',
     text: '#ffffff',
   };
 
