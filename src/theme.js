@@ -10,7 +10,7 @@ export const lightTheme = {
   };
 
   export const navdarkTheme = {
-    background: '#40403e21',
+    background: '#383737',
     text: '#ffffff',
   };
   

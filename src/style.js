@@ -13,6 +13,9 @@ export const NavBar = styled.nav`
   width: 100%;
   position: relative;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  position: fixed;
+  top: 0;
+
   @media (max-width: 768px) {
     padding-left: 2rem;
     padding-right: 2rem;

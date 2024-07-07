@@ -9,6 +9,13 @@ import About from './screen/about';
 import Services from './screen/service';
 import Contact from './screen/contact';
 import { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
+
+const ContentWrapper = styled.div`
+  margin-top: 60px; /* Adjust according to the height of your navbar */
+  padding: 20px; /* Optional: Add padding to content */
+  overflow-y: auto; /* Ensure the content is scrollable */
+`;
 
 function App() {
   const [theme, setTheme] = useState(lightTheme);
@@ -22,13 +29,15 @@ function App() {
       <GlobalStyle />
       <Router>
         <NavigationBar toggleTheme={toggleTheme} />
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Navigate to="/" />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <ContentWrapper>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Navigate to="/" />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </ContentWrapper>
       </Router>
     </ThemeProvider>
   );

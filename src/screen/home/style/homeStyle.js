@@ -130,7 +130,7 @@ export const Textb = styled.p`
 `;
 
 export const Button = styled.button`
-  padding: 10px 20px;
+  padding: 10px 10px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 10px;
